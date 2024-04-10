@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATIVIDADE</title>
+  <link rel="stylesheet" href="q5b.css">
+</head>
+<body>
+
+  <h1>Q1: Combinação</h1>
+  <p>Digite o número (n) e a amostra (k)</p>
+  <input type="number" id="n" min="0">
+  <input type="number" id="k" min="0">
+  <button onclick="calculateCombinations()">Calcule</button>
+  <p id="result"></p>
+  <script src="q1.js"></script>
+
+  <h1>Q2: Mensagem rolando</h1>
+  <input type="text" id="message" value="Mensagem rolando">
+  <button onclick="startRolling()">Comece</button>
+  <button onclick="stopRolling()">Pare</button>
+  <script src="q2.js"></script>
+
+  <h1> Q3: Inverter Texto</h1>
+  <textarea id="inputText" rows="5" cols="50"></textarea>
+  <br>
+  <textarea id="outputText" rows="5" cols="50"></textarea>
+  <br>
+  <button onclick="invertText()">Inverter</button>
+  <script src="q3.js"></script>
+
+
+   <h1> Q4: Calculadora</h1>
+  <div id="calculator">
+    <input type="text" id="display" disabled>
+    <div id="buttons">
+        <!-- Row 1 -->
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button onclick="setOperation('+')">+</button>
+        <!-- Row 2 -->
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="setOperation('-')">-</button>
+        <button onclick="setOperation('*')">*</button>
+        <!-- Row 3 -->
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="setOperation('/')">/</button>
+        <button onclick="calculateLog()">log</button>
+        <!-- Row 4 -->
+        <button onclick="appendNumber(0)">0</button>
+        <button onclick="calculatePercentage()">%</button>
+        <button onclick="calculateSquareRoot()">√</button>
+        <button onclick="calculateFactorial()">N!</button>
+        <button onclick="calculateResult()">=</button>
+        <!-- Row 5 -->
+        <button onclick="calculateExponentiation()">^</button>
+        <button onclick="calculateSin()">sin</button>
+        <button onclick="calculateCos()">cos</button>
+        <button onclick="calculateTan()">tan</button>
+        <button onclick="calculateHyperbolicTan()">tanh</button>
+        <!-- Row 6 -->
+        <button onclick="calculateHyperbolicSin()">sinh</button>
+        <button onclick="calculateHyperbolicCos()">cosh</button>
+    </div>
+  </div>
+
+  <script src="q4.js"></script>
+
+
+  <h1>Calcular a data</h1>
+  <label for="dateInput">Insira a data (dd/mm/yyyy):</label>
+  <script src="q5a.js"></script>
+
+
+  <h1 id="title">Q5 :A página que muda de cor com base na hora do dia</h1>
+  <p id="description">Esta página altera a cor do plano de fundo e do texto com base na hora do dia :).</p>
+  <script src="q5b.js"></script>
+
+</body>
+</html>

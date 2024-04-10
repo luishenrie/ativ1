@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 1s, color 1s;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
